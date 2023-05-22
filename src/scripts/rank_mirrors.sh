@@ -4,7 +4,7 @@ echo "##########################################"
 echo "     Updating Mirrors To Fastest Ones     "
 echo "##########################################"
 echo
-rate-mirrors --allow-root --protocol https arch  | sudo tee /etc/pacman.d/mirrorlist && sudo pacman -Sy
+sudo reflector --verbose -phttps -f10 -l10 --sort rate --save /etc/pacman.d/mirrorlist && sudo pacman -Sy
 echo
 echo "##################################"
 echo " Done ! Updating should go faster "
