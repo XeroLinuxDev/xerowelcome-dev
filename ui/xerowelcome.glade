@@ -189,26 +189,6 @@ We, the XeroLinux Developers, hope that you will enjoy using XeroLinux as much a
               </packing>
             </child>
             <child>
-                  <object class="GtkEventBox">
-                    <property name="name">github</property>
-                    <property name="visible">True</property>
-                    <property name="can-focus">False</property>
-                    <signal name="button-press-event" handler="on_link_clicked" swapped="no"/>
-                    <child>
-                      <object class="GtkImage" id="github">
-                        <property name="visible">True</property>
-                        <property name="can-focus">False</property>
-                        <property name="tooltip-text">Github</property>
-                      </object>
-                    </child>
-                  </object>
-                  <packing>
-                    <property name="expand">False</property>
-                    <property name="fill">True</property>
-                    <property name="position">1</property>
-                  </packing>
-                </child>
-            <child>
               <object class="GtkBox" id="social">
                 <property name="visible">True</property>
                 <property name="can-focus">False</property>
@@ -232,7 +212,7 @@ We, the XeroLinux Developers, hope that you will enjoy using XeroLinux as much a
                   <packing>
                     <property name="expand">False</property>
                     <property name="fill">True</property>
-                    <property name="position">2</property>
+                    <property name="position">1</property>
                   </packing>
                 </child>
                 <child>
@@ -252,7 +232,7 @@ We, the XeroLinux Developers, hope that you will enjoy using XeroLinux as much a
                   <packing>
                     <property name="expand">False</property>
                     <property name="fill">True</property>
-                    <property name="position">3</property>
+                    <property name="position">2</property>
                   </packing>
                 </child>
                 <child>
@@ -272,27 +252,7 @@ We, the XeroLinux Developers, hope that you will enjoy using XeroLinux as much a
                   <packing>
                     <property name="expand">False</property>
                     <property name="fill">True</property>
-                    <property name="position">4</property>
-                  </packing>
-                </child>
-                <child>
-                  <object class="GtkEventBox">
-                    <property name="name">ko-fi</property>
-                    <property name="visible">True</property>
-                    <property name="can-focus">False</property>
-                    <signal name="button-press-event" handler="on_link_clicked" swapped="no"/>
-                    <child>
-                      <object class="GtkImage" id="ko-fi">
-                        <property name="visible">True</property>
-                        <property name="can-focus">False</property>
-                        <property name="tooltip-text">Ko-fi</property>
-                      </object>
-                    </child>
-                  </object>
-                  <packing>
-                    <property name="expand">False</property>
-                    <property name="fill">True</property>
-                    <property name="position">5</property>
+                    <property name="position">3</property>
                   </packing>
                 </child>
                 <style>
