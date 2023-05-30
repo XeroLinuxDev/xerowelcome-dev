@@ -195,7 +195,7 @@ We, the XeroLinux Developers, hope that you will enjoy using XeroLinux as much a
                     <property name="can-focus">False</property>
                     <signal name="button-press-event" handler="on_link_clicked" swapped="no"/>
                     <child>
-                      <object class="GtkImage" id="youtube">
+                      <object class="GtkImage" id="github">
                         <property name="visible">True</property>
                         <property name="can-focus">False</property>
                         <property name="tooltip-text">Github</property>
