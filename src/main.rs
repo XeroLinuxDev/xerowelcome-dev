@@ -237,7 +237,7 @@ fn build_ui(application: &gtk::Application) {
         let forum_btn: gtk::Button = builder.object("forum").unwrap();
         forum_btn.set_visible(false);
         let init_libadw_btn: gtk::Button = builder.object("init-libadw").unwrap();
-        libadw_btn.set_visible(false);
+        init-libadw_btn.set_visible(false);
         let update_system_btn: gtk::Button = builder.object("update-system").unwrap();
         update_system_btn.set_visible(false);
         let drivers_page_btn: gtk::Button = builder.object("driversBrowser").unwrap();
@@ -249,7 +249,7 @@ fn build_ui(application: &gtk::Application) {
 
         // Cleanup the grid
         homepage_grid.remove(&forum_btn);
-        homepage_grid.remove(&libadw_btn);
+        homepage_grid.remove(&init-libadw_btn);
         homepage_grid.remove(&update_system_btn);
         homepage_grid.remove(&drivers_page_btn);
         homepage_grid.remove(&faq_page_btn);
@@ -309,7 +309,7 @@ fn build_ui(application: &gtk::Application) {
     pages::create_postinstall_page(&builder);
     pages::create_drivers_page(&builder);
     pages::create_faq_page(&builder);
-    pages::create_rices_page(&builder);
+    //pages::create_rices_page(&builder);
 
     // Show the UI
     main_window.show();
