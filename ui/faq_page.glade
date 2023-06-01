@@ -90,8 +90,6 @@ along with cachyos-welcome.  If not, see <http://www.gnu.org/licenses/>.
             <property name="visible">True</property>
             <property name="can-focus">False</property>
             <property name="receives-default">True</property>
-            <property name="image-position">right</property>
-            <property name="always-show-image">True</property>
           </object>
           <packing>
             <property name="left-attach">1</property>
@@ -105,8 +103,6 @@ along with cachyos-welcome.  If not, see <http://www.gnu.org/licenses/>.
             <property name="visible">True</property>
             <property name="can-focus">False</property>
             <property name="receives-default">True</property>
-            <property name="image-position">right</property>
-            <property name="always-show-image">True</property>
           </object>
           <packing>
             <property name="left-attach">1</property>
@@ -120,8 +116,6 @@ along with cachyos-welcome.  If not, see <http://www.gnu.org/licenses/>.
             <property name="visible">True</property>
             <property name="can-focus">False</property>
             <property name="receives-default">True</property>
-            <property name="image-position">right</property>
-            <property name="always-show-image">True</property>
           </object>
           <packing>
             <property name="left-attach">0</property>
@@ -135,8 +129,6 @@ along with cachyos-welcome.  If not, see <http://www.gnu.org/licenses/>.
             <property name="visible">True</property>
             <property name="can-focus">False</property>
             <property name="receives-default">True</property>
-            <property name="image-position">right</property>
-            <property name="always-show-image">True</property>
           </object>
           <packing>
             <property name="left-attach">0</property>
@@ -150,8 +142,6 @@ along with cachyos-welcome.  If not, see <http://www.gnu.org/licenses/>.
             <property name="visible">True</property>
             <property name="can-focus">False</property>
             <property name="receives-default">True</property>
-            <property name="image-position">right</property>
-            <property name="always-show-image">True</property>
           </object>
           <packing>
             <property name="left-attach">0</property>
@@ -165,8 +155,6 @@ along with cachyos-welcome.  If not, see <http://www.gnu.org/licenses/>.
             <property name="visible">True</property>
             <property name="can-focus">False</property>
             <property name="receives-default">True</property>
-            <property name="image-position">right</property>
-            <property name="always-show-image">True</property>
           </object>
           <packing>
             <property name="left-attach">1</property>
@@ -180,8 +168,6 @@ along with cachyos-welcome.  If not, see <http://www.gnu.org/licenses/>.
             <property name="visible">True</property>
             <property name="can-focus">False</property>
             <property name="receives-default">True</property>
-            <property name="image-position">right</property>
-            <property name="always-show-image">True</property>
           </object>
           <packing>
             <property name="left-attach">0</property>
@@ -195,8 +181,6 @@ along with cachyos-welcome.  If not, see <http://www.gnu.org/licenses/>.
             <property name="visible">True</property>
             <property name="can-focus">False</property>
             <property name="receives-default">True</property>
-            <property name="image-position">right</property>
-            <property name="always-show-image">True</property>
           </object>
           <packing>
             <property name="left-attach">1</property>
@@ -210,8 +194,6 @@ along with cachyos-welcome.  If not, see <http://www.gnu.org/licenses/>.
             <property name="visible">True</property>
             <property name="can-focus">False</property>
             <property name="receives-default">True</property>
-            <property name="image-position">right</property>
-            <property name="always-show-image">True</property>
           </object>
           <packing>
             <property name="left-attach">1</property>
@@ -225,8 +207,6 @@ along with cachyos-welcome.  If not, see <http://www.gnu.org/licenses/>.
             <property name="visible">True</property>
             <property name="can-focus">False</property>
             <property name="receives-default">True</property>
-            <property name="image-position">right</property>
-            <property name="always-show-image">True</property>
           </object>
           <packing>
             <property name="left-attach">0</property>

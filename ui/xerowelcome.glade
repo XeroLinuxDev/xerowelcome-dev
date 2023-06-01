@@ -120,7 +120,7 @@ We, the XeroLinux Developers, hope that you will enjoy using XeroLinux as much a
                 <property name="visible">True</property>
                 <property name="can-focus">False</property>
                 <property name="receives-default">True</property>
-                <property name="tooltip-text" translatable="yes">F.A.Q / Guides</property>
+                <property name="tooltip-text" translatable="yes">Frequently Asked Questions & some guides</property>
                 <signal name="clicked" handler="on_btn_clicked" swapped="no"/>
               </object>
               <packing>
@@ -135,6 +135,7 @@ We, the XeroLinux Developers, hope that you will enjoy using XeroLinux as much a
                 <property name="visible">True</property>
                 <property name="can-focus">False</property>
                 <property name="receives-default">True</property>
+                <property name="tooltip-text">Fixes GnuPG Key errors.</property>
               </object>
               <packing>
                 <property name="left-attach">2</property>
@@ -311,6 +312,7 @@ We, the XeroLinux Developers, hope that you will enjoy using XeroLinux as much a
                 <property name="visible">True</property>
                 <property name="can-focus">False</property>
                 <property name="receives-default">True</property>
+                <property name="tooltip-text">Update your Arch. AUR & Flatpak packages</property>
               </object>
               <packing>
                 <property name="left-attach">1</property>
@@ -324,7 +326,7 @@ We, the XeroLinux Developers, hope that you will enjoy using XeroLinux as much a
                 <property name="visible">True</property>
                 <property name="can-focus">False</property>
                 <property name="receives-default">True</property>
-                <property name="tooltip-text" translatable="yes">Drivers</property>
+                <property name="tooltip-text" translatable="yes">Install GPU drivers.</property>
                 <signal name="clicked" handler="on_btn_clicked" swapped="no"/>
               </object>
               <packing>
@@ -339,7 +341,7 @@ We, the XeroLinux Developers, hope that you will enjoy using XeroLinux as much a
                 <property name="visible">True</property>
                 <property name="can-focus">False</property>
                 <property name="receives-default">True</property>
-                <property name="tooltip-text" translatable="yes">Web resource</property>
+                <property name="tooltip-text" translatable="yes">Web forums for the XeroLinux community</property>
                 <property name="image-position">right</property>Fli
                 <property name="always-show-image">True</property>
                 <signal name="clicked" handler="on_link_clicked" swapped="no"/>
@@ -405,7 +407,7 @@ We, the XeroLinux Developers, hope that you will enjoy using XeroLinux as much a
                     <property name="name">postinstallBrowser</property>
                     <property name="can-focus">False</property>
                     <property name="receives-default">True</property>
-                    <property name="tooltip-text" translatable="yes">Things you want to do after install</property>
+                    <property name="tooltip-text" translatable="yes">Things to do after installation</property>
                     <property name="margin-left">15</property>
                     <property name="margin-right">15</property>
                     <signal name="clicked" handler="on_btn_clicked" swapped="no"/>
@@ -422,7 +424,7 @@ We, the XeroLinux Developers, hope that you will enjoy using XeroLinux as much a
                     <property name="name">appBrowser</property>
                     <property name="can-focus">False</property>
                     <property name="receives-default">True</property>
-                    <property name="tooltip-text" translatable="yes">Common application selection</property>
+                    <property name="tooltip-text" translatable="yes">Commonly used applications list</property>
                     <property name="margin-left">15</property>
                     <property name="margin-right">15</property>
                     <signal name="clicked" handler="on_btn_clicked" swapped="no"/>
