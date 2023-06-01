@@ -377,6 +377,15 @@ pub fn init_update_sys_main_button(builder: &Builder) {
     update_system_btn.connect_clicked(on_update_system_btn_clicked);
 }
 
+pub fn init_libadw_main_button(builder: &Builder) {
+    let fix_keys_btn: gtk::Button = builder.object("libadw").unwrap();
+    fix_keys_btn.connect_clicked(move |_| {
+    let _ = utils::run_cmd_terminal(
+        String::from("/usr/share/xerowelcome/scripts/fix_gtk4.sh"),
+        false,
+    );
+}
+
 fn on_paconf_btn_clicked(_: &gtk::Button) {
     let _ = utils::run_cmd_terminal(
         String::from("/usr/share/xerowelcome/scripts/update_pacman.sh"),
@@ -398,10 +407,3 @@ fn on_update_system_btn_clicked(_: &gtk::Button) {
         String::from("/usr/share/xerowelcome/scripts/update_system.sh"),
         false,
     );
-}
-fn on_libadw_btn_clicked(_: &gtk::Button) {
-    let _ = utils::run_cmd_terminal(
-        String::from("/usr/share/xerowelcome/scripts/fix_gtk4.sh"),
-        false,
-    );
-}
