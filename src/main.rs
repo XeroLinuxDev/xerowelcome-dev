@@ -235,7 +235,7 @@ fn build_ui(application: &gtk::Application) {
         // Hide everything that is not available on live system.
         let forum_btn: gtk::Button = builder.object("forum").unwrap();
         forum_btn.set_visible(false);
-        let libadw_btn: gtk::Button = builder.object("fix-adw-gtk4").unwrap();
+        let libadw_btn: gtk::Button = builder.object("libadw").unwrap();
         libadw_btn.set_visible(false);
         let update_system_btn: gtk::Button = builder.object("update-system").unwrap();
         update_system_btn.set_visible(false);
