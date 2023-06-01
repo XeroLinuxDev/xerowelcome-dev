@@ -107,7 +107,7 @@ We, the XeroLinux Developers, hope that you will enjoy using XeroLinux as much a
                 <property name="visible">True</property>
                 <property name="can-focus">False</property>
                 <property name="receives-default">True</property>
-                <property name="tooltip-text">Updates your mirrorlist to get you faster downloads</property>
+                <property name="tooltip-text">Updates the mirrorlist for faster downloads</property>
               </object>
               <packing>
                 <property name="left-attach">0</property>
@@ -313,7 +313,7 @@ We, the XeroLinux Developers, hope that you will enjoy using XeroLinux as much a
                 <property name="visible">True</property>
                 <property name="can-focus">False</property>
                 <property name="receives-default">True</property>
-                <property name="tooltip-text">Update your Arch/AUR/Flatpak packages</property>
+                <property name="tooltip-text">Update Arch/AUR/Flatpak packages</property>
               </object>
               <packing>
                 <property name="left-attach">1</property>
