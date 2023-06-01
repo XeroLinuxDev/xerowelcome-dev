@@ -373,8 +373,13 @@ pub fn init_gpg_main_button(builder: &Builder) {
 }
 
 pub fn init_libadw_main_button(builder: &Builder) {
-    let libadw_btn: gtk::Button = builder.object("libadw").unwrap();
-    libadw_btn.connect_clicked(on_libadw_btn_clicked);
+    let libadw_btn: gtk::Button = builder.object("fix-libadw-gtk4").unwrap();
+    libadw_btn.connect_clicked(move |_| {
+        let _ = utils::run_cmd_terminal(
+            String::from("/usr/share/xerowelcome/scripts/fix_gtk4.sh"),
+            false,
+        );
+    });
 }
 
 pub fn init_update_sys_main_button(builder: &Builder) {
@@ -402,11 +407,5 @@ fn on_update_system_btn_clicked(_: &gtk::Button) {
     let _ = utils::run_cmd_terminal(
         String::from("/usr/share/xerowelcome/scripts/update_system.sh"),
         false,
-    );
-}
-fn on_libadw_btn_clicked(_: &gtk::Button) {
-    let _ = utils::run_cmd_terminal(
-            String::from("/usr/share/xerowelcome/scripts/fix_gtk4.sh"),
-            false,
     );
 }
