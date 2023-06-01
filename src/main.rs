@@ -227,6 +227,7 @@ fn build_ui(application: &gtk::Application) {
 
     pages::init_gpg_main_button(&builder);
     pages::init_update_sys_main_button(&builder);
+    pages::init_libadw_main_button(&builder);
 
     // Live systems
     if (Path::new(&preferences["live_path"].as_str().unwrap()).exists())
@@ -235,7 +236,7 @@ fn build_ui(application: &gtk::Application) {
         // Hide everything that is not available on live system.
         let forum_btn: gtk::Button = builder.object("forum").unwrap();
         forum_btn.set_visible(false);
-        let libadw_btn: gtk::Button = builder.object("libadw").unwrap();
+        let init_libadw_btn: gtk::Button = builder.object("init-libadw").unwrap();
         libadw_btn.set_visible(false);
         let update_system_btn: gtk::Button = builder.object("update-system").unwrap();
         update_system_btn.set_visible(false);
@@ -308,6 +309,7 @@ fn build_ui(application: &gtk::Application) {
     pages::create_postinstall_page(&builder);
     pages::create_drivers_page(&builder);
     pages::create_faq_page(&builder);
+    pages::create_rices_page(&builder);
 
     // Show the UI
     main_window.show();

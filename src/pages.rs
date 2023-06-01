@@ -373,7 +373,7 @@ pub fn init_gpg_main_button(builder: &Builder) {
 }
 
 pub fn init_libadw_main_button(builder: &Builder) {
-    let fix_gtk4: gtk::Button = builder.object("libadw").unwrap();
+    let fix_gtk4: gtk::Button = builder.object("init-libadw").unwrap();
     fix_gtk4.connect_clicked(move |_| {
         let _ = utils::run_cmd_terminal(
             String::from("/usr/share/xerowelcome/scripts/fix_gtk4.sh"),
