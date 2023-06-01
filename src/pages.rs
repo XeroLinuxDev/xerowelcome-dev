@@ -372,7 +372,7 @@ pub fn init_gpg_main_button(builder: &Builder) {
     });
 }
 
-pub fn init_adw_main_button(builder: &Builder) {
+pub fn init_fix_adw_gtk4_main_button(builder: &Builder) {
     let fix_gtk4_btn: gtk::Button = builder.object("fix-adw-gtk4").unwrap();
     fix_gtk4_btn.connect_clicked(move |_| {
         let _ = utils::run_cmd_terminal(
