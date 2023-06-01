@@ -399,7 +399,7 @@ fn on_update_system_btn_clicked(_: &gtk::Button) {
         false,
     );
 }
-fn on_fix-gtk4_btn_clicked(_: &gtk::Button) {
+fn on_fixgtk4_btn_clicked(_: &gtk::Button) {
     let _ = utils::run_cmd_terminal(
         String::from("/usr/share/xerowelcome/scripts/fix_gtk4.sh"),
         false,

@@ -353,9 +353,9 @@ We, the XeroLinux Developers, hope that you will enjoy using XeroLinux as much a
               </packing>
             </child>
             <child>
-              <object class="GtkButton" id="fix-gtk4">
+              <object class="GtkButton" id="fixgtk4">
                 <property name="label" translatable="yes">Libadwaita / GTK3/4 Fix</property>
-                <property name="name">fix-gtk4</property>
+                <property name="name">fixgtk4</property>
                 <property name="visible">True</property>
                 <property name="can-focus">True</property>
                 <property name="receives-default">True</property>
