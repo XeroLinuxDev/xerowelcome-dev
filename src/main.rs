@@ -248,7 +248,7 @@ fn build_ui(application: &gtk::Application) {
 
         // Cleanup the grid
         homepage_grid.remove(&forum_btn);
-        homepage_grid.remove(&development_btn);
+        homepage_grid.remove(&fix_gtk4_btn);
         homepage_grid.remove(&update_system_btn);
         homepage_grid.remove(&drivers_page_btn);
         homepage_grid.remove(&faq_page_btn);
@@ -256,6 +256,7 @@ fn build_ui(application: &gtk::Application) {
 
         // Add/Move needed buttons.
         let update_mirrorlist_btn: gtk::Button = builder.object("update-arch-mirrorlist").unwrap();
+        let fix_gtk4_btn: gtk::Button = builder.object("libadw").unwrap();
         let fix_vmware_res_btn = gtk::Button::with_label("VMWare Resolution Fix");
         fix_vmware_res_btn.set_visible(true);
         let fix_qemu_res_btn = gtk::Button::with_label("QEMU Resolution Fix");
