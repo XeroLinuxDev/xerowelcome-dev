@@ -248,7 +248,7 @@ fn build_ui(application: &gtk::Application) {
 
         // Cleanup the grid
         homepage_grid.remove(&forum_btn);
-        homepage_grid.remove(&fix_gtk4_btn);
+        homepage_grid.remove(&libadw_btn);
         homepage_grid.remove(&update_system_btn);
         homepage_grid.remove(&drivers_page_btn);
         homepage_grid.remove(&faq_page_btn);
