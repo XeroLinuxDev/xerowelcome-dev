@@ -236,7 +236,7 @@ fn build_ui(application: &gtk::Application) {
         let forum_btn: gtk::Button = builder.object("forum").unwrap();
         forum_btn.set_visible(false);
         let libadw_btn: gtk::Button = builder.object("libadw").unwrap();
-        development_btn.set_visible(false);
+        libadw_btn.set_visible(false);
         let update_system_btn: gtk::Button = builder.object("update-system").unwrap();
         update_system_btn.set_visible(false);
         let drivers_page_btn: gtk::Button = builder.object("driversBrowser").unwrap();
