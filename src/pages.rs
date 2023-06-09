@@ -362,7 +362,7 @@ pub fn init_mirrorlist_main_button(builder: &Builder) {
     });
 }
 
-pub fn _init_libadw_main_button(builder: &Builder) {
+pub fn init_libadw_main_button(builder: &Builder) {
     let libadw_btn: gtk::Button = builder.object("libadw").unwrap();
     libadw_btn.connect_clicked(move |_| {
         let _ = utils::run_cmd_terminal(

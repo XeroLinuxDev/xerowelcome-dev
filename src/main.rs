@@ -235,8 +235,8 @@ fn build_ui(application: &gtk::Application) {
         // Hide everything that is not available on live system.
         let forum_btn: gtk::Button = builder.object("forum").unwrap();
         forum_btn.set_visible(false);
-        let _libadw_btn: gtk::Button = builder.object("libadw").unwrap();
-        _libadw_btn.set_visible(false);
+        let libadw_btn: gtk::Button = builder.object("libadw").unwrap();
+        libadw_btn.set_visible(false);
         let update_system_btn: gtk::Button = builder.object("update-system").unwrap();
         update_system_btn.set_visible(false);
         let drivers_page_btn: gtk::Button = builder.object("driversBrowser").unwrap();
@@ -248,7 +248,7 @@ fn build_ui(application: &gtk::Application) {
 
         // Cleanup the grid
         homepage_grid.remove(&forum_btn);
-        homepage_grid.remove(&_libadw_btn);
+        homepage_grid.remove(&libadw_btn);
         homepage_grid.remove(&update_system_btn);
         homepage_grid.remove(&drivers_page_btn);
         homepage_grid.remove(&faq_page_btn);
@@ -256,7 +256,7 @@ fn build_ui(application: &gtk::Application) {
 
         // Add/Move needed buttons.
         let update_mirrorlist_btn: gtk::Button = builder.object("update-arch-mirrorlist").unwrap();
-        let _libadw_btn: gtk::Button = builder.object("libadw").unwrap();
+        let libadw_btn: gtk::Button = builder.object("libadw").unwrap();
         let fix_vmware_res_btn = gtk::Button::with_label("VMWare Resolution Fix");
         fix_vmware_res_btn.set_visible(true);
         let fix_qemu_res_btn = gtk::Button::with_label("QEMU Resolution Fix");
