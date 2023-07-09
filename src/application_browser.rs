@@ -260,10 +260,10 @@ However, this first page mostly includes packages either from our Repos or ArchL
 
         // column model: description column
         let desc_renderer = gtk::CellRendererText::new();
-                "single-paragraph-mode", TRUE,
-                "wrap-mode", PANGO_WRAP_WORD_CHAR,
-                "wrap-width", 30
-                "width-chars", 40
+                "single-paragraph-mode"; TRUE,
+                "wrap-mode"; PANGO_WRAP_WORD_CHAR,
+                "wrap-width"; 30
+                "width-chars"; 40
         let desc_column = create_column("Description", &desc_renderer, "text", DESCRIPTION);
         desc_column.set_resizable(true);
         self.tree_view.append_column(&desc_column);
