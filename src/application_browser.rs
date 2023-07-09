@@ -262,9 +262,9 @@ However, this first page mostly includes packages either from our Repos or ArchL
 
         let desc_renderer = gtk::CellRendererText::new();
         desc_renderer.set_line_wrap(true);
+        desc_renderer.set_max_width(40);
         let desc_column = create_column("Description", &desc_renderer, "text", DESCRIPTION);
         desc_column.set_resizable(true);
-        desc_column.set_max_width(40);
         self.tree_view.append_column(&desc_column);
 
         // column model: install column
