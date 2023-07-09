@@ -273,7 +273,7 @@ However, this first page mostly includes packages either from our Repos or ArchL
             Some(Box::new(treeview_cell_check_data_function)),
         );
 
-        install_column.set_resizable(false);
+        install_column.set_resizable(true);
         install_column.set_max_width(40);
         install_column.set_fixed_width(40);
         self.tree_view.append_column(&install_column);
