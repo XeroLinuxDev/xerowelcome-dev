@@ -251,7 +251,7 @@ However, this first page mostly includes packages either from our Repos or ArchL
         // column model: app name column
         let app_cell_renderer = gtk::CellRendererText::new();
         let app_column = create_column("Application", &app_cell_renderer, "text", APPLICATION);
-        // app_column.set_resizable(false);
+        app_column.set_resizable(false);
         app_column.set_cell_data_func(
             &app_cell_renderer,
             Some(Box::new(treeview_cell_app_data_function)),
@@ -260,8 +260,12 @@ However, this first page mostly includes packages either from our Repos or ArchL
 
         // column model: description column
         let desc_renderer = gtk::CellRendererText::new();
+                "single-paragraph-mode", TRUE,
+                "wrap-mode", PANGO_WRAP_WORD_CHAR,
+                "wrap-width", 30
+                "width-chars", 40
         let desc_column = create_column("Description", &desc_renderer, "text", DESCRIPTION);
-        desc_column.set_resizable(false);
+        desc_column.set_resizable(true);
         self.tree_view.append_column(&desc_column);
 
         // column model: install column
